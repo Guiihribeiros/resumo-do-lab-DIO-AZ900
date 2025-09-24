@@ -141,3 +141,48 @@ Até o momento, tivemos a introdução ao conceito de computação em nuvem e um
 - **AzCopy:** ferramenta CLI para copiar e sincronizar arquivos entre armazenamento local e Azure.
 - **Gerenciador de Armazenamento do Azure:** gerencia Blobs, Files, Queues e Tables de forma prática.
 - **Sincronização de arquivos do Azure:** mantém dados locais e na nuvem sempre atualizados.
+
+- # Microsoft Azure – Identidade e Segurança
+
+## Microsoft Entra
+
+**Microsoft Entra ID**  
+É o serviço de gerenciamento de identidades e acesso baseado em nuvem do Microsoft Azure.  
+- Garante a autenticação dos funcionários.  
+- Permite logon único (SSO).  
+- Facilita o gerenciamento de aplicativos.  
+
+**Microsoft Entra Domain Services**  
+Pensado para manter a compatibilidade com ambientes mais tradicionais, trazendo para a nuvem um Active Directory gerenciado.
+
+---
+
+## Conceitos de Segurança
+
+- **Autenticação**: identifica a pessoa ou serviço, solicitando credenciais de acesso legítimas.  
+- **Autorização**: determina o nível de acesso de uma pessoa ou serviço, definindo quais dados podem ser acessados.  
+- **Autenticação multifator (MFA)**: fornece segurança adicional exigindo dois ou mais elementos para completar a autenticação.  
+
+---
+
+## Recursos do Entra
+
+- **B2B do Microsoft Entra External ID**: permite que parceiros, fornecedores e convidados acessem recursos da empresa usando suas próprias credenciais, sem precisar criar contas internas.  
+- **Azure AD B2C**: solução voltada ao consumidor, permitindo login com redes sociais ou contas próprias criadas pelo usuário.  
+- **Acesso condicional**: define regras de login baseadas em fatores como localização, dispositivo e MFA, liberando ou bloqueando acesso conforme o risco.  
+- **Controle de acesso baseado em função (RBAC)**: organiza permissões por funções (ex.: leitor, colaborador, administrador), garantindo que cada usuário tenha apenas o acesso necessário.  
+- **Modelo de confiança zero (Zero Trust)**: abordagem onde nada é confiado por padrão; cada usuário ou dispositivo deve ser autenticado e autorizado em tempo real.  
+
+---
+
+## Proteção e Monitoramento
+
+- **Proteção completa**: fornece vários níveis de defesa; ataques contra uma camada não atingem a próxima.  
+- **Microsoft Defender for Cloud**: serviço de monitoramento que fornece proteção nos datacenters. Oferece recomendações de segurança, detecta e bloqueia malware, analisa e identifica ataques potenciais.  
+
+---
+
+## Observações Importantes
+
+- Contas de usuários são excluídas permanentemente após **30 dias**.
+
