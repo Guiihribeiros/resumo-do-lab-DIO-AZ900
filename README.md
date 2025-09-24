@@ -5,90 +5,113 @@ Até o momento, tivemos a introdução ao conceito de computação em nuvem e um
 
 ---
 
-## Conceitos aprendidos
-
-# Microsoft AZ-900 – Anotações
+# Microsoft AZ-900 – Resumo
 
 ## Computação em Nuvem
-- **Definição**: fornecimento de serviços de computação pela internet, habilitando inovações mais rápidas, recursos flexíveis e economias de escala.  
-- É a **virtualização dos serviços de informática**.
+- **Definição**: fornecimento de serviços de computação pela internet, habilitando inovações rápidas, recursos flexíveis e economias de escala.  
+- É a virtualização dos serviços de informática.  
 
 ### Modelos de Nuvem
-- **Nuvem Privada (on premise):** ambiente em nuvem no datacenter da empresa; toda responsabilidade é da organização.  
-  - Responsável por hardware, software, atualizações e upgrades.  
-  - Usuários externos não têm acesso.  
-- **Nuvem Pública:** um provedor fornece os recursos via rede.  
-  - Nenhuma despesa de capital para escalar verticalmente.  
-  - Aplicativos podem ser provisionados e desprovisionados rapidamente.  
-  - Paga-se somente pelo que for utilizado.  
-- **Nuvem Híbrida:** conecta recursos de nuvem privada e pública.  
-  - Flexibilidade para decidir onde executar aplicativos.  
-  - Controle de segurança e conformidade legal.  
+- **Privada (On Premise):** ambiente em nuvem no datacenter da empresa; responsabilidade total da organização.  
+- **Pública:** provedor fornece os recursos via rede; não há despesas de capital para escalar; pagamento conforme uso.  
+- **Híbrida:** integração entre nuvem privada e pública; maior flexibilidade e conformidade legal.  
 
 ### CapEx x OpEx
-- **CapEx (Capital Expenditure):** investimento inicial em infraestrutura física. O valor se deprecia com o tempo.  
-- **OpEx (Operational Expenditure):** pagamento por produtos/serviços conforme necessidade; modelo de pagamento por uso.  
+- **CapEx:** despesas de capital em infraestrutura física (valor se deprecia ao longo do tempo).  
+- **OpEx:** despesas operacionais; pagamento conforme uso.  
 
 ### Modelo baseado em consumo
-- Paga apenas pelos recursos usados.  
-- Melhora a previsão de custos.  
-- Preços fornecidos por recurso individual.  
+- Pagamento somente pelos recursos usados.  
+- Melhor previsão de custos.  
 
 ### Outros conceitos
-- **Jump server:** servidor intermediário.  
-- **Versões prévias:** versões em testes; usar com cautela.  
+- **Jump Server:** servidor intermediário.  
+- **Versões Prévias:** recursos em testes, usar com cautela.  
 
 ---
 
 ## Benefícios da Nuvem
-- **Alta disponibilidade:** garantia contratual de funcionamento com crédito em caso de falha.  
-- **Escalabilidade:** ajuste da capacidade conforme demanda (mais ou menos recursos).  
-- **Elasticidade:** ajuste dinâmico dos recursos por picos de uso (ex.: Black Friday).  
-- **Confiabilidade:** resiliência a falhas, com recursos distribuídos em múltiplos locais.  
-- **Previsibilidade:** clareza nos recursos e custos.  
-- **Segurança:** ferramentas fornecidas pela plataforma, mas responsabilidade de configuração é do cliente.  
-- **Governança:** aplicação de padrões, auditorias e conformidade com políticas.  
-- **Gerenciabilidade:** várias formas de gestão (portal, CLI, APIs, PowerShell).  
+- **Alta disponibilidade:** garante funcionamento com créditos em caso de falhas.  
+- **Escalabilidade:** ajustar recursos conforme demanda.  
+- **Elasticidade:** ajuste dinâmico para picos de uso (ex.: Black Friday).  
+- **Confiabilidade:** resiliência e recursos distribuídos.  
+- **Previsibilidade:** clareza de custos e recursos.  
+- **Segurança:** ferramentas fornecidas pela Microsoft, mas configuração é responsabilidade do cliente.  
+- **Governança:** padrões, auditorias e conformidade.  
+- **Gerenciabilidade:** várias formas de gerenciamento (portal, CLI, API, PowerShell).  
 
 ---
 
 ## Tipos de Serviço de Nuvem
-- **IaaS (Infraestrutura como Serviço):** você gerencia SO, aplicativos e dados; provedor cuida da infraestrutura.  
+- **IaaS (Infraestrutura como Serviço):** você gerencia SO, aplicativos e dados.  
 - **PaaS (Plataforma como Serviço):** você gerencia apenas aplicativos e dados; provedor cuida do resto.  
 - **SaaS (Software como Serviço):** uso direto do aplicativo final (ex.: Office 365, Netflix).  
 
 ---
 
-## Alta Disponibilidade no Azure
-- **Domínio de falhas (Fault Domain):** protege contra falhas físicas de hardware.  
-- **Domínio de atualização (Update Domain):** protege contra reinícios em atualizações planejadas.  
-
----
-
-## Modelo de Responsabilidade Compartilhada
-O provedor e o cliente dividem responsabilidades de segurança e gestão.  
+## Alta Disponibilidade
+- **Domínio de Falhas:** protege contra falhas físicas de hardware.  
+- **Domínio de Atualização:** protege contra reinícios em atualizações planejadas.  
 
 ---
 
 ## Regiões e Disponibilidade
-- **Regiões:** +60 regiões em 140 países, compostas por um ou mais datacenters próximos.  
-- **Pares de região:** cada região tem uma região par para recuperação de desastres.  
-- **Zonas de disponibilidade:** fornecem redundância dentro da mesma região.  
-- **Regiões soberanas:** usadas apenas por governos (ex.: EUA, militar).  
-- **China:** operada pela 21Vianet, seguindo leis locais.  
+- Mais de **60 regiões em 140 países**.  
+- Compostas por datacenters próximos, para reduzir latência.  
+- **Pares de Região:** redundância para recuperação de desastres.  
+- **Regiões Soberanas:** restritas a governos (ex.: EUA, militar).  
+- **China:** operada pela 21Vianet, conforme leis locais.  
+- **Zonas de Disponibilidade:** redundância dentro da mesma região.  
 
 ---
 
-## Recursos e Organização
-- **Recursos do Azure:** componentes como VMs, redes e storage.  
-- **Grupo de recursos:** organiza recursos relacionados; um recurso só pode estar em um grupo.  
-- **Assinaturas:** vinculadas a contas; definem limites de cobrança e gestão.  
-- **Grupos de gerenciamento:** agregam múltiplas assinaturas para aplicar regras e governança. 
+## Organização de Recursos
+- **Recursos do Azure:** VMs, storage, redes etc.  
+- **Grupo de Recursos:** organiza recursos relacionados.  
+- **Assinaturas:** vinculadas a uma conta, definem custos e limites.  
+- **Grupos de Gerenciamento:** agrupam assinaturas para aplicar políticas.  
 
 ---
 
-## Próximos passos
-Continuar os estudos aprofundando os principais serviços do Azure (computação, rede, armazenamento e segurança), além de explorar a prática na plataforma.  
+## Computação no Azure
+- **Máquinas Virtuais (VMs):** emulação completa de computadores físicos (IaaS).  
+- **Conjunto de Dimensionamento:** ajusta automaticamente a quantidade ou o tamanho das VMs conforme a demanda.  
+- **Conjunto de Disponibilidade:** distribui VMs em domínios de falha/atualização para garantir acesso.  
+- **Área de Trabalho Virtual (AVD):** desktop Windows na nuvem, pronto para usuários acessarem.  
+
+### Diferença VMs x Área de Trabalho
+- **VMs:** controle total para administradores (SO, apps, rede).  
+- **Área de Trabalho Remota (AVD):** desktop pronto, gerenciado pelo Azure para usuários finais.  
 
 ---
-*Resumo pessoal de estudos para apoiar a certificação **AZ-900 Microsoft Azure Fundamentals***  
+
+## Contêineres
+- Permitem executar aplicativos empacotados com dependências em ambientes isolados, leves e portáteis.  
+- Não exigem SO completo (diferente de VMs).  
+- Serviços: **Azure Container Instances (ACI)** e **Azure Kubernetes Service (AKS)**.  
+- Oferta baseada em **PaaS**.  
+
+---
+
+## Azure Functions
+- Serviço **serverless** que executa código sob demanda em resposta a eventos.  
+- Escala automaticamente e cobra apenas pelo uso.  
+- Oferta de **PaaS**.  
+
+---
+
+## Serviços de Aplicativos
+- Plataforma para criar, implantar e dimensionar aplicações web e APIs.  
+- Suporte a .NET, Node.js, Java, Python, PHP.  
+- Oferta de **PaaS**.  
+
+---
+
+## Serviços de Rede
+- **VNet (Virtual Network):** rede privada e isolada na nuvem para conectar VMs e serviços.  
+- Permite conexão com redes locais via **VPN** ou **ExpressRoute**.  
+
+### VPN Gateway x ExpressRoute
+- **VPN Gateway:** usa internet pública para conexões criptografadas; solução mais simples e barata.  
+- **ExpressRoute:** conexão privada e dedicada; maior desempenho e confiabilidade, indicada para cenários críticos.  
+
