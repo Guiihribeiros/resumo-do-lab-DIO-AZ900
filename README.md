@@ -186,3 +186,20 @@ Pensado para manter a compatibilidade com ambientes mais tradicionais, trazendo 
 
 - Contas de usuários são excluídas permanentemente após **30 dias**.
 
+- ---
+
+## Fatores que afetam os custos e gerenciamento financeiro no Azure  
+
+- **Tipo de recurso:** cada recurso tem um custo específico associado.  
+- **Consumo:** modelo pago conforme o uso; quanto mais consome, maior o custo.  
+- **Manutenção:** monitorar o ambiente já implantado para reduzir gastos desnecessários.  
+- **Área geográfica:** o mesmo recurso pode ter preços diferentes conforme a região.  
+- **Tráfego de rede:** transferências de entrada podem ser gratuitas, mas as de saída (ex.: entre regiões) geram custos.  
+- **Assinatura:** o tipo e a configuração da assinatura impactam nos valores.  
+
+### Ferramentas de apoio  
+- **Azure Marketplace:** catálogo de aplicativos e serviços de parceiros; garantia oferecida pelo fabricante, não pela Microsoft.  
+- **Calculadora de preços:** permite estimar custos de produtos do Azure considerando região, camada, opções de cobrança, suporte, programas e ofertas.  
+- **Calculadora de Custo Total de Propriedade (TCO):** compara os custos da infraestrutura local com os custos no Azure, ajudando a estimar economias potenciais.  
+- **Monitoramento
+
