@@ -265,3 +265,12 @@ Pensado para manter a compatibilidade com ambientes mais tradicionais, trazendo 
 
 ## Bicep
 - Linguagem de programação nativa da Microsoft para descrever recursos do Azure.  
+
+---
+
+## Ferramentas de monitoramento
+- **Assistente do Azure:** analisa recursos implantados no Azure e faz recomendações com base nas práticas recomendadas para otimizar os recursos.  
+  - Confiabilidade, segurança, desempenho, custo e excelência operacional.  
+- **Integridade do serviço do Azure (Status do Azure):** mantém você informado sobre o status geral do Azure, incluindo serviços e recursos que podem afetar ou já estar afetando o usuário.  
+- **Azure Monitor:** focado em maximizar a disponibilidade e desempenho de aplicativos e serviços, coletando, analisando e tomando decisões com base na telemetria da nuvem e de ambientes locais.  
+- **Resource Health:** mostra a saúde e disponibilidade de recursos individuais do Azure, informando se estão funcionando corretamente e alertando sobre problemas que possam afetá-los.
